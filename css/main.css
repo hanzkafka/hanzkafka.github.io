@@ -1,0 +1,45 @@
+.in_progress { color: #CC6600; }
+.done { color: #009933; }
+
+@media print {
+    body { color: #000; }
+    .navbar, #intro, input[type="checkbox"], .done, .in_progress { display: none; }
+    a { color: #000; text-decoration: underline; }
+    .tab-content > .tab-pane, .pill-content > .pill-pane { display: block; }
+    .tab-pane { page-break-after: always; }
+}
+
+ul {
+    list-style-type: none;
+	padding-left: 20px;
+}
+
+.highlight {
+    background-color: rgb(255, 246, 18);
+}
+
+.stroked {
+    text-decoration: line-through;
+}
+
+.hiddenfile {
+ width: 0px;
+ height: 0px;
+ overflow: hidden;
+}
+
+.back-to-top {
+	position: fixed;
+	bottom: 2em;
+	right: 0px;
+	text-decoration: none;
+	color: #000000;
+	background-color: rgba(235, 235, 235, 0.80);
+	font-size: 12px;
+	padding: 1em;
+	display: none;
+}
+
+.back-to-top:hover{
+	background-color: rgba(135, 135, 135, 0.50);
+}
